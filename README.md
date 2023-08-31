@@ -6,15 +6,15 @@ Any project have a good repository and file structure, it will help developers t
 Below is the one repo/file structure:
 ProjectXYZ:
     |-src:
-   |    |-controllers
-   |    |-db
-      |-config
-       |-routs
-        |-middlewares
-        |-services
-        |-app.ts
-        |-index.ts
-        
+    |    |-controllers
+    |    |-db
+    |    |-config
+    |    |-routs
+    |    |-middlewares
+    |    |-services
+    |    |-app.ts
+    |    |-index.ts
+    |     
     |-tests
     |-.env.example
     |-dockerfile
