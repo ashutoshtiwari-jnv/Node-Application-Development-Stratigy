@@ -8,21 +8,32 @@ Below is the one repo/file structure:
  ProjectXYZ:
     |-src:
     |    |-controllers
-    |    |        |- All controllers
-    |    |        |- index.ts
+    |    |  |- All controllers
+    |    |  |- index.ts
+    |    |
     |    |-db
     |    |  |- migrations
     |    |  |- models
     |    |  |- index.ts // db connections should be there
+    |    |
     |    |-config
     |    |  |- db_config.ts
     |    |  |- constants.ts
+    |    |
     |    |-routes
-    |    |     |- index.ts
+    |    |  |- index.ts
+    |    |
     |    |-middlewares
+    |    |  |- vlidators
+    |    |  |      |- xyz_validator.ts
+    |    |  |      |- index.ts
+    |    |  |- All other middlewares should be here.
+    |    |  |- index.ts
+    |    |
     |    |-services
-    |    |-app.ts
-    |    |-index.ts
+    |    |  |- All third party services should be here (like: kafka, logger, redis etc)
+    |    |-app.ts  // This file containes server class and middleware reserved here.
+    |    |-index.ts  // Call servers instance, db instance etc.
     |     
     |-tests
     |-.env.example
