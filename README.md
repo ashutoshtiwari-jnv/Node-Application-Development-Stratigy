@@ -8,9 +8,17 @@ Below is the one repo/file structure:
  ProjectXYZ:
     |-src:
     |    |-controllers
+    |    |        |- All controllers
+    |    |        |- index.ts
     |    |-db
+    |    |  |- migrations
+    |    |  |- models
+    |    |  |- index.ts // db connections should be there
     |    |-config
-    |    |-routs
+    |    |  |- db_config.ts
+    |    |  |- constants.ts
+    |    |-routes
+    |    |     |- index.ts
     |    |-middlewares
     |    |-services
     |    |-app.ts
