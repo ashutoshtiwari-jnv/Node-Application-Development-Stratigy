@@ -13,7 +13,12 @@ ProjectXYZ:
     |    |
     |    |-db
     |    |  |- migrations
+    |    |  |     |- 1234.users.ts (migration for users)
+    |    |  |     |- index.ts
     |    |  |- models
+    |    |  |     |- users.ts (model for users)
+    |    |  |     |- index.ts (All relations should be here)
+    |    |  |- seeders
     |    |  |- index.ts // db connections should be there
     |    |
     |    |-config
@@ -32,6 +37,8 @@ ProjectXYZ:
     |    |
     |    |-services
     |    |  |- All third party services should be here (like: kafka, logger, redis etc)
+    |    |-utils
+    |    |  |- All utility functions should be here
     |    |-app.ts  // This file containes server class and middleware reserved here.
     |    |-index.ts  // Call servers instance, db instance etc.
     |     
@@ -43,6 +50,37 @@ ProjectXYZ:
     |-tsconfig.json
 </code></b>
 
+
+## Http Server Configuration
+## ORM Selection
+ORM stands for Object-Relational Mapping. In a Node.js project, an ORM (such as Sequelize or TypeORM) is a tool that enables developers to interact with a relational database using an object-oriented paradigm.
+
+Here's a breakdown of what ORM does:
+
+**Abstraction of Database Operations:** With an ORM, developers can perform database operations (such as querying, inserting, updating, and deleting data) using familiar programming constructs like classes, objects, and methods, rather than writing raw SQL queries.
+
+**Mapping of Objects to Database Tables:** ORM libraries map JavaScript objects to corresponding database tables and vice versa, allowing developers to work with database entities as if they were regular JavaScript objects.
+
+**Data Validation and Type Casting:** ORMs often provide built-in mechanisms for data validation and type casting, ensuring that the data being saved to the database meets certain criteria and is of the correct data type.
+
+**Database Agnostic:** ORMs abstract away the specific details of the underlying database system, making it easier to switch between different database engines without needing to change much of the application code.
+
+**Relationship Management:** ORMs support defining and managing relationships between different database tables/entities, such as one-to-one, one-to-many, and many-to-many relationships.
+
+Overall, ORMs simplify database interactions and help streamline the development process by providing a higher level of abstraction and reducing the amount of boilerplate code needed to work with databases in Node.js projects.
+
+Top ORMs in market:
+1. Sequalize (Recommended: Support Model, Migration, Seeder)
+2. Prisma
+3. TypeORM
+4. KnexJs
+
+**Note:** Code related to ORM should be in the db repo.
+
+To know more about ORMs, Please go through below link:
+- https://amplication.com/blog/top-6-orms-for-modern-nodejs-app-development
+- https://www.eversql.com/best-orm-for-node-js/
+- https://medium.com/@aabedraba/choosing-a-database-solution-and-orm-for-node-js-6c256ced72ff
 ## Logger:
 ## API Documentation:
 This is the one of the important part of the project development. It will help developers and testers to understand apis in the project their request and responses. There are so many tools are available in the market for this. Just choose one of them which is best suitable for your project.
