@@ -51,8 +51,9 @@ ProjectXYZ:
 </code></b>
 
 
-## Http Server Configuration
-## ORM Selection
+## Http Server Configuration:
+## Database Selection:
+## ORM Selection & DB Configuration:
 ORM stands for Object-Relational Mapping. In a Node.js project, an ORM (such as Sequelize or TypeORM) is a tool that enables developers to interact with a relational database using an object-oriented paradigm.
 
 Here's a breakdown of what ORM does:
@@ -70,7 +71,7 @@ Here's a breakdown of what ORM does:
 Overall, ORMs simplify database interactions and help streamline the development process by providing a higher level of abstraction and reducing the amount of boilerplate code needed to work with databases in Node.js projects.
 
 Top ORMs in market:
-1. Sequalize (Recommended: Support Model, Migration, Seeder)
+1. Sequalize (Recommended: Supports Model, Migration, Seeder)
 2. Prisma
 3. TypeORM
 4. KnexJs
@@ -81,7 +82,10 @@ To know more about ORMs, Please go through below link:
 - https://amplication.com/blog/top-6-orms-for-modern-nodejs-app-development
 - https://www.eversql.com/best-orm-for-node-js/
 - https://medium.com/@aabedraba/choosing-a-database-solution-and-orm-for-node-js-6c256ced72ff
+## Request Validator:
+## Caching:
 ## Logger:
+## Project Documentation in .md file:
 ## API Documentation:
 This is the one of the important part of the project development. It will help developers and testers to understand apis in the project their request and responses. There are so many tools are available in the market for this. Just choose one of them which is best suitable for your project.
     https://blog.hubspot.com/website/api-documentation-tool
@@ -90,3 +94,9 @@ This is the one of the important part of the project development. It will help d
 This is the era of test driven development. In each project client, and senior tech fellow expect proper unit test write for the project with high test coverage & report. So this is the responsability of each and every developer, to add a proper unit test feature with best unit test framework. Jest is the one of the very famous unit test framework in the market for Node projects.
  * <b>Jest:</b> https://basarat.gitbook.io/typescript/intro-1/jest  
 For more information of unit test frameworks click on the link: https://blog.logrocket.com/comparing-best-node-js-unit-testing-frameworks/
+
+## Message Broker Selection:
+
+## Rate Limtiter Configuration:
+
+## Dockerizing/Containerization:
