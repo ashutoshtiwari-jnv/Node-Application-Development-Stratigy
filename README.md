@@ -72,7 +72,7 @@ Overall, ORMs simplify database interactions and help streamline the development
 
 Top ORMs in market:
 1. Sequalize (Recommended: Supports Model, Migration, Seeder)
-2. Prisma
+2. Prisma (2nd Recommendation)
 3. TypeORM
 4. KnexJs
 
